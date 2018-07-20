@@ -1,0 +1,353 @@
+.vertical-align-center {
+    vertical-align: middle;
+}
+
+.pointer-events-none{
+  pointer-events: none;
+}
+
+#addAssignmentModal .stepCircle{
+  cursor: pointer;
+}
+
+#closeAssignment{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 20px;
+  font-weight: lighter;
+  outline: none !important;
+  color: #333;
+  opacity: 1;
+}
+
+div#addAssignmentModal .modal-dialog {
+    position: absolute;
+    width: 800px;
+    height: 63rem;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: rgba(0, 128, 188, 1);
+    border-style: solid;
+    border-width: 1px;
+    margin: auto;
+    padding: 0;
+}
+
+#addAssignmentModal.modal {
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	outline: 0;
+}
+
+#addAssignmentModal.modal.fade.in {
+	background-color: rgba(47, 79, 79, 0.6);
+	-webkit-transition: opacity .5s linear;
+	-o-transition: opacity .5s linear;
+	transition: opacity .5s linear;
+	z-index: 10000;
+}
+
+#addAssignmentModal .vertical-alignment-helper {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+#addAssignmentModal .header-text {
+	font-family: 'Roboto Regular';
+	font-size: 16px;
+	font-weight: 500;
+	display: block;
+	height: 100%;
+	width: 100%;
+	word-break: break-all;
+	margin: 0;
+}
+
+#addAssignmentModal .text {
+	font-family: 'Roboto Regular';
+	font-size: 12px;
+	font-weight: 400;
+	display: block;
+	height: 100%;
+	width: 100%;
+	word-break: break-all;
+	margin: 0;
+}
+
+body.modal-open {
+	margin-right: 0;
+}
+
+.modal.fade .modal-dialog {
+	-moz-transition: none !important;
+	-o-transition: none !important;
+	-webkit-transition: none !important;
+	transition: none !important;
+	-moz-transform: none !important;
+	-ms-transform: none !important;
+	-o-transform: none !important;
+	-webkit-transform: none !important;
+	transform: none !important;
+}
+
+#addAssignmentModal .modal-dialog > .modal-content {
+	display: inline-block;
+	text-align: left;
+	width: inherit;
+	height: inherit;
+	transform: none;
+	position: relative;
+	box-shadow: none;
+	border-radius: 0;
+	border: 1px solid #06C;
+	margin: 0 auto;
+}
+
+
+#addAssignmentModal .modal-header {
+	font-size: 16px;
+	border-bottom: 0 !important;
+	color: #333;
+	font-family: 'Roboto Regular', "Segoe UI", Verdana, Helvetica, Sans-Serif;
+	margin: 0;
+	padding: 50px 0 0;
+}
+
+#addAssignmentModal .modal-body {
+	max-height: calc(100% - 137px);
+	overflow: auto;
+	width: 100%;
+	padding: 0 50px;
+}
+
+#addAssignmentModal .row {
+	margin-right: -15px !important;
+	margin-left: -15px !important;
+}
+
+#addAssignmentModal .logo {
+	width: 35px;
+	float: left;
+	text-align: center;
+	margin: 0 10px 0 0;
+}
+
+#addAssignmentModal .modal-footer {
+	height: 100px;
+	line-height: 100px;
+	bottom: 0;
+	right: 50px !important;
+	width: calc(100% - 50px);
+	border-top: 0 !important;
+	padding: 0;
+}
+
+#addAssignmentModal .vertical-alignment-helper {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+#btnUserCancel,
+#btnUserBack {
+    width: auto;
+    height: 35px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-radius: 5px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-family: 'Roboto Regular', "Segoe UI", Verdana, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #06C;
+    border-color: rgba(0, 102, 204, 1);
+    border-style: solid;
+    border-width: 1px;
+    line-height: 1px;
+    margin-left: 20px;
+}
+
+#btnUserNext,
+#btnUserDone {
+    width: auto;
+    height: 35px;
+    background: inherit;
+    background-color: rgba(0, 102, 204, 1);
+    border: none;
+    border-radius: 5px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-family: 'Roboto Regular', "Segoe UI", Verdana, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFF;
+    border-width: 0;
+    margin-left: 20px;
+    line-height: 1px;
+}
+
+
+/* css for step indicator */
+#addAssignmentModal #step-menu {
+    height: auto;
+}
+#addAssignmentModal .table {
+    display: table;
+    margin: 0 auto;
+}
+
+#addAssignmentModal ul#step-list {
+    display: flex;
+    list-style: none;
+    padding-left: 10px;
+    padding-top: 16px;
+}
+
+#addAssignmentModal .circleBodyText {
+    font-family: 'Roboto Regular', "Segoe UI", Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#addAssignmentModal .selectorText{
+  font-family: 'Roboto Regular', "Segoe UI", Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  color:#0066CC;
+}
+
+#addAssignmentModal .step-circle {
+    border-radius: 50% !important;
+    height: 40px;
+    width: 40px;
+    background: #0066CC;
+    color: #fff;
+    padding-top: 11px;
+    text-align: center;
+}
+
+#addAssignmentModal .step-connector {
+    border-color: #0066CC;
+    display: block;
+    width: 100px;
+}
+
+#addAssignmentModal .opacityPoint4 {
+    opacity: 0.4 !important;
+    pointer-events: none;
+}
+
+#addAssignmentModal .circle-inactive-style {
+    color: #0066CC;
+    background-color: white;
+    padding-top: 11px;
+    border: 1px solid #0066CC;
+}
+
+#addAssignmentModal .stepTableText tr td {
+    padding: 0px 10px !important;
+    vertical-align: top;
+    color: #0066CC;
+}
+
+#addAssignmentModal .stepText {
+    max-width: 150px;
+    width: 150px;
+    display: inline-block !important;
+    font-size: 13px !important;
+    font-family: 'Roboto Regular', "Segoe UI", Verdana, Helvetica, sans-serif;
+}
+
+#addAssignmentModal .liner-nl {
+    display: block;
+}
+
+#addAssignmentModal .step1{
+  position: relative;
+  right: 11px;
+}
+#addAssignmentModal .step2{
+  position: relative;
+  right: 60px;
+}
+#addAssignmentModal .step3{
+  position: relative;
+  right: 68px;
+}
+#addAssignmentModal .step4{
+  position: relative;
+  right: 84px;
+}
+
+#addAssignmentModal tr[class^="step"]{
+  left:0;
+}
+
+#availableItemLabel,#selectedItemLabel{
+  font-family: 'Roboto Regular', "Segoe UI", Verdana, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+div#selectedAssignmentsList .table-condensed > tbody > tr{
+  line-height: 0.6;
+}
+
+div#selectedAssignmentsList .table-condensed > tbody > tr > td:first-child{
+  font-size: 10px !important;
+  font-family: 'Roboto Regular', "Segoe UI", Verdana, Helvetica, sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+div#selectedAssignmentsList .table-condensed > tbody > tr > td:nth-child(2){
+  font-size: 10px !important;
+  font-family: 'Roboto Regular', "Segoe UI", Verdana, Helvetica, sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 510px;
+}
+#addAssignmentModal .background-search-container {
+    padding: 9px;
+    background: rgba(0, 102, 204, 0.0980392156862745);
+    border: 1px solid rgb(230, 240, 250);
+}
+#addAssignmentModal input.form-control{
+  border-radius: 0;
+}
+#addAssignmentModal .assignment-input-group .input-group-addon{
+    background: white !important;
+    border-radius: 0;
+}
+#addAssignmentModal .assignment-input-group .form-control{
+	border-right:0;
+	box-shadow:0 0 0;
+	border-color:#ccc;
+}
+#addAssignmentModal .assignment-input-group button{
+    border:0;
+    background:transparent;
+}
